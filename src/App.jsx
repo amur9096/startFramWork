@@ -18,12 +18,15 @@ const router = createBrowserRouter([
       { path: "*", element: <NotFound /> }
     ]
   },
+  {
+    basename: '/startFramWork',
+  }
 ])
 function App() {
 
   return (
     <>
-      <RouterProvider router={router}  basename="/startFramWork" ></RouterProvider>
+      <RouterProvider router={router} ></RouterProvider>
     </>
   )
 }
